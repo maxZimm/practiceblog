@@ -1,0 +1,10 @@
+<h1>Authors</h1>
+
+<ul>
+ <% @authors.each do |auth| %>
+  <li>
+    <%= auth.first_name + " " + auth.last_name %>
+    <%= link_to 'Articles', author_path(auth) %> 
+  </li>
+ <% end %>
+</ul>

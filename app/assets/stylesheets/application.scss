@@ -1,0 +1,102 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+$bg-color: #c9d0db;
+$ac-color: #d6c58d;
+$ac-color-d: #42649e;
+
+$font-stack-primary: 'Raleway', sans-serif;
+$font-stack-secondary: 'Bree Serif', serif;
+$font-color-primary: #000;
+$font-color-secondary:#e0842f;
+$font-color-anchor: #b55cfc;
+
+$margin-main:8%;
+
+
+
+body{
+ color:$font-color-primary ;
+ background: $bg-color;
+ font-family: $font-stack-primary;
+ margin-top: 55px; 
+ margin-left: 0px;
+ margin-right: 0px;
+}
+
+.container {
+  margin: 0% $margin-main;
+}
+
+header {
+ width:100%;
+}
+
+.navbar{
+  position: fixed;
+  overflow: visible;
+  top: 0;
+  width: 100%;
+  background-color: $ac-color-d;
+}
+
+.navbar a {
+  float:left;
+  display: block;
+  text-align: left;
+  padding: 10px 15px;
+
+}
+
+h1{
+ color:$font-color-secondary;
+}
+
+a {
+ text-decoration:none;
+ color:$font-color-secondary;
+}
+a:hover {
+ color:$font-color-anchor ; 
+}
+
+form {
+  input[type=text] {
+    background-color: $bg-color;
+    min-width:30%;;
+    min-height: 2.5em;
+    border: 2px solid $ac-color-d;
+    box-sizing: border-box;
+    margin:1em 0;
+    
+    
+    }
+  textarea{
+    background-color: $bg-color;
+    min-width: 45%;
+    min-height: 10em;
+    border: 2px solid $ac-color-d;
+    margin: 1em 0;
+    font-size: 12px;
+}
+  input[type=submit]{
+    color: $ac-color;
+    background-color: $ac-color-d;
+    height:35px;
+    width: 135px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+}
